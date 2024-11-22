@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Completa y Guay</title>
+    <style>
+        /* Estilos globales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px 0;
+            z-index: 100;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        header nav a {
+            color: white;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #ff6b6b;
+        }
+
+        /* Sección Hero */
+        .hero {
+            background: url('https://via.placeholder.com/1920x800') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            margin-top: 70px; /* Para no tapar el contenido con el header fijo */
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .btn-primary {
+            padding: 15px 30px;
+            background-color: #ff6b6b;
+            color: white;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #f7b731;
+        }
+
+        /* Sección Acerca de */
+        .about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 20px;
+            background-color: #ffffff;
+        }
+
+        .about img {
+            border-radius: 8px;
+            width: 40%;
+            margin-right: 30px;
+        }
+
+        .about-text {
+            width: 50%;
+        }
+
+        .about h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        /* Sección Galería */
+        .gallery {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #f4f4f9;
+        }
+
+        .gallery h2 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+
+        .gallery .slider {
+            position: relative;
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .gallery .slider img {
+            width: 100%;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery .prev, .gallery .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            font-size: 2rem;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        .gallery .prev {
+            left: 20px;
+        }
+
+        .gallery .next {
+            right: 20px;
+        }
+
+        /* Formulario de Contacto */
+        .contact {
+            padding: 60px 20px;
+            background-color: #ffffff;
+        }
+
+        .contact h2 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .contact form {
+            width: 60%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact input, .contact textarea {
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contact button {
+            padding: 15px;
+            background-color: #ff6b6b;
+            color: white;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border: none;
+        }
+
+        .contact button:hover {
+            background-color: #f7b731;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <header>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#about">Acerca de</a>
+            <a href="#gallery">Galería</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero">
+        <h1>Bienvenidos a nuestra página increíble</h1>
+        <p>Explora el mundo digital de manera única y moderna</p>
+        <button class="btn-primary">Comienza ahora</button>
+    </section>
+
+    <!-- Sección Acerca de -->
+    <section id="about" class="about">
+        <img src="https://via.placeholder.com/500x500" alt="Imagen Acerca de Nosotros">
+        <div class="about-text">
+            <h2>Quiénes somos</h2>
+            <p>Somos un equipo de diseñadores y desarrolladores apasionados por crear experiencias únicas en la web. Nuestro enfoque es combinar la estética con la funcionalidad para crear proyectos impresionantes y efectivos.</p>
+        </div>
+    </section>
+
+    <!-- Sección Galería -->
+    <section id="gallery" class="gallery">
+        <h2>Nuestra Galería</h2>
+        <div class="slider">
+            <img src="https://via.placeholder.com/1920x600" alt="Imagen 1">
+            <img src="https://via.placeholder.com/1920x600" alt="Imagen 2">
+            <img src="https://via.placeholder.com/1920x600" alt="Imagen 3">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contact" class="contact">
+        <h2>Contáctanos</h2>
+        <form id="contact-form" onsubmit="return validateForm()">
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+            <textarea id="message" name="message" placeholder="Tu mensaje" rows="5" required></textarea>
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mi Página Web Completa. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Script de JavaScript -->
+    <script>
+        // Validación de formulario
+        function validateForm() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let message = document.getElementById("message").value;
+            if (name == "" || email == "" || message == "") {
+                alert("Por favor, completa todos los campos.");
+                return false;
+            }
+            alert("Mensaje enviado con éxito.");
+            return true;
+        }
+
+        // Funcionalidad del slider
+        let currentSlide = 0;
+        const slides = document.querySelectorAll(".gallery .slider img");
+        const prevButton = document.querySelector(".gallery .prev");
+        const nextButton = document.querySelector(".gallery .next");
+
+        function showSlide(index) {
+            if (index >= slides.length) currentSlide = 0;
+            if (index < 0) currentSlide = slides.length - 1;
+            slides.forEach((slide, i) => {
+                slide.style.transform = `translateX(${(i - currentSlide) * 100}%)`;
+            });
+        }
+
+        prevButton.addEventListener("click", () => {
+            currentSlide--;
+            showSlide(currentSlide);
+        });
+
+        nextButton.addEventListener("click", () => {
+            currentSlide++;
+            showSlide(currentSlide);
+        });
+
+        showSlide(currentSlide);  // Inicializa el slider
+    </script>
+
+</body>
+</html>
