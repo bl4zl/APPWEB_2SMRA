@@ -3,9 +3,12 @@
 #programa que ordena los numeros de una lista de mayor a menor 
 
 lista = [5,3,8,1]
-for var in range(len(lista)):
-    primero = var
-    segundo = var + 1
-    
-    if primero < segundo:
-        print(list(range(9)))
+
+for i in range(len(lista)-1):
+    if lista[i] >= lista[i+1]:
+        lista2 = lista[i]
+        print(lista2)
+
+    elif lista[i] <= lista[i+1]:
+        lista2 + i+1
+        print(lista2) 
