@@ -1,0 +1,47 @@
+<form>
+    <fieldset>
+        <legend>Información de contacto</legend>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email"><br>
+        <label for="message">Mensaje:</label>
+        <textarea id="message"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>Intereses</legend>
+        <label><input type="checkbox" name="intereses" value="tecnologia"> Tecnología</label><br>
+        <label><input type="checkbox" name="intereses" value="musica"> Música</label><br>
+        <label><input type="checkbox" name="intereses" value="deportes"> Deportes</label><br>
+        <label><input type="checkbox" name="intereses" value="ciencia"> Ciencia</label><br>
+        <label><input type="checkbox" name="intereses" value="arte"> Arte</label><br>
+    </fieldset>   
+    <input type="submit" value="Enviar">
+    </form>
+
+<label for="email">Email: </label>
+<input id="email" type="email"><br><br>
+
+<label for="estudios">Estudios: </label>
+<select id="estudios">
+    <optgroup label="Estudios Universitarios">
+        <option>Doctorado</option>
+        <option>Máster</option>
+        <option>Grado</option>
+    </optgroup>
+    <optgroup label="Ciclo Formativo">
+        <option>Grado Superior</option>
+        <option>Grado Medio</option>
+    </optgroup>
+</select><br><br>
+
+<label for="navegador">Elige tu navegador favorito: </label>
+<input id="navegador" list="browsers">
+<datalist id="browsers">
+    <option value="Chrome">
+    <option value="Firefox">
+    <option value="Internet Explorer">
+    <option value="Opera">
+    <option value="Safari">
+    <option value="Microsoft Edge">
+</datalist><br><br>
