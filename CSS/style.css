@@ -1,12 +1,34 @@
 /* --------------General------------- */
+
 body{
+    font-family: "Lexend", sans-serif;
+    background-color: honeydew;
     margin:0;
 }
 
+a{
+    text-decoration: none; /*quita el subrayado de todos los enlaces*/
+}
 
 /* --------------Header------------- */
 .cabecera{
     background-color: #010101;
     display:flex;
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.cabecera__logo{
+    width: 30%;
+}
+
+.cabecera__nav__list{
+    display: flex;
+    font-size: 1.25rem;
+}
+
+.cabecera__nav__list__enlace{
+    margin-right: 1.5rem;
+    color: aliceblue;
 }
