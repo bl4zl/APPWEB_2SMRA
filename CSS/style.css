@@ -12,7 +12,7 @@ a{
 
 /* --------------Header------------- */
 .cabecera{
-    background-color: #010101;
+    background-color: rgb(83, 49, 102);
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -20,15 +20,141 @@ a{
 }
 
 .cabecera__logo{
-    width: 30%;
+    display: flex;
+    width: 8%;
+    justify-content: space-evenly;
+    padding-left: 2rem;
 }
 
 .cabecera__nav__list{
     display: flex;
     font-size: 1.25rem;
+    list-style-type: none;
 }
 
 .cabecera__nav__list__enlace{
     margin-right: 1.5rem;
     color: aliceblue;
+}
+
+.cabecera__nav__list__enlace:hover{
+    color: rgb(24, 204, 63);
+}
+
+/*----------seccion principal------------*/
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+.principal__titulos{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.principal__viajes{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+
+.principal__viajes__art{
+    width: 25%;
+    height: 100%;
+}
+
+.principal__viajes__art__img{
+    height: 45rem;
+    width: 100%;
+    size: 20rem;
+    border-radius: 2.5rem;
+    object-fit: cover;
+}
+
+.principal__viajes__art__contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.principal__viajes__art__contenedor__texto{
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 70%;
+}
+
+.principal__viajes__art__contenedor__enlace{
+    background-color: rgb(83, 49, 102);
+    color: rgb(24, 204, 63);
+    border-radius: 0.35rem;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    margin-left: 0.75rem;
+    text-align: center;
+}
+
+.principal__viajes__art__contenedor__enlace:hover{
+    background-color: rgb(138, 81, 170);
+}
+
+.principal__contacto{
+    width: 100%;
+    background-color: rgb(24, 204, 63);
+}
+
+.principal__contacto__form__cont{
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    align-items: center;
+    margin-top:  5rem;
+    margin-bottom: 5rem;
+    
+}
+
+.principal__contacto__form__cont__titulo{
+    width: 100%;
+    text-align: center;
+    color: rgb(83, 49, 102);
+    font-size: 1.5rem;
+    padding-bottom: 6rem;
+    padding-top: 2%;
+}
+
+.principal__contacto__form__cont__div{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding-bottom: 2rem;
+}
+
+.principal__contacto__form__cont__email{
+    margin-bottom: 0.5rem;
+    border: 0;
+    padding: 0.35rem;
+    align-items: center;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    border-radius: 0.35rem;
+}
+
+.principal__contacto__form__cont__boton{
+    padding: 0.25rem;
+    border: 0;
+    align-items: center;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    border-radius: 0.35rem;
+    background-color: rgb(83, 49, 102);
+}
+
+.principal__contacto__form__cont__boton:hover{
+    background-color: rgb(138, 81, 170);
+    color: black;
 }
